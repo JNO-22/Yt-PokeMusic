@@ -1,0 +1,11 @@
+{
+    "manifest_version": 0,
+    "name": "Poke YTMusic",
+    "version": "1.0",
+    "description": "A simple Pet extension for YouTube Music",
+    
+    "Permissions": [
+        "https://music.youtube.com/*"
+        ,"tabs","storage"
+    ]
+}
