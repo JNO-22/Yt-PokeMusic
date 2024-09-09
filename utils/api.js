@@ -15,12 +15,12 @@ export async function fetchPokemonData(pokemon) {
           monster(filter: ` +
         JSON.stringify(pokemon) +
         ` ) {
+            name
             forms {
               monsterId
-              name
+              fullName
               isShiny
               canon
-              isFemale
               sprites {
                 actions {
                   ... on Sprite {

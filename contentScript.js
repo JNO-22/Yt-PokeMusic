@@ -1,25 +1,16 @@
-// contentScript.js
+import init from "./sprite.js";
 import { fetchPokemonData } from "./utils/api.js";
 import { processPokemonData } from "./utils/dataprocces.js";
 
 function getSpriteData() {
-    fetchPokemonData([1]).then((data) => {
-        let spriteData = processPokemonData(data);
-        let spriteDataStr = spriteData;
-        return spriteDataStr;
+  fetchPokemonData([700, 77])
+    .then((data) => {
+      let spriteData = processPokemonData(data);
+      return spriteData;
+    })
+    .then((data) => {
+      init(data);
     });
 }
 
 getSpriteData();
-
-
-
-
-
-
-
-
-
-
-
-
